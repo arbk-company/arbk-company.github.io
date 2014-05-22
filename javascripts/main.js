@@ -31,7 +31,7 @@ function mkNavbar(active) {
             <span class="icon-bar"></span> \
             <span class="icon-bar"></span> \
           </button> \
-          <a class="navbar-brand" href="/arbk">ГК АРБК</a> \
+          <a class="navbar-brand" href="/">ГК АРБК</a> \
         </div> \
         <div class="collapse navbar-collapse"> \
           <ul class="nav navbar-nav">'
