@@ -1,6 +1,6 @@
 function mkNavbar(active) {
   var navigation = [
-    { type: 0, title: "Главная", link: "/arbk" },
+    { type: 0, title: "Главная", link: "/" },
     { type: 1, title: "О компании", link: "#", label: "l0", subnav: [
         { title: "Руководсво и подразделения", link: "#" },
         { title: "Лицензии и сертификаты", link: "#" },
