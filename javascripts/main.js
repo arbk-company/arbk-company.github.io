@@ -2,7 +2,7 @@ function mkNavbar(active) {
   var navigation = [
     { type: 0, title: "Главная", link: "/" },
     { type: 1, title: "О компании", link: "#", label: "l0", subnav: [
-        { title: "Руководсво и подразделения", link: "#" },
+        { title: "Руководство и подразделения", link: "#" },
         { title: "Лицензии и сертификаты", link: "#" },
         { title: "Сотрудничество", link: "#" }
       ]},
@@ -22,7 +22,7 @@ function mkNavbar(active) {
     { type: 0, title: "Контакты", link: "/contact.html"}
   ];
 
-  var result = '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation"> \
+  var result = '<div class="navbar navbar-inverse navbar-default" role="navigation"> \
       <div class="container"> \
         <div class="navbar-header"> \
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> \
