@@ -1,29 +1,17 @@
 function mkNavbar(active) {
   var navigation = [
-    { type: 0, title: "Главная", link: "/" },
-    { type: 1, title: "О компании", link: "#", label: "l0", subnav: [
-        { title: "Руководство и подразделения", link: "#" },
-        { title: "Лицензии и сертификаты", link: "#" },
-        { title: "Сотрудничество", link: "#" }
-      ]},
+    { type: 0, title: "О компании", link: "/about.html", label: "l0" },
     { type: 1, title: "Услуги", link: "#", label: "l1", subnav: [
-        { title: "Оценка", link: "#"},
+        { title: "Оценка", link: "/evaluation/"},
         { title: "Экспертиза", link: "/service/expertise/cte.html"},
-        { title: "Патентование", link: "#"}
+        { title: "Патентование", link: "/service/patent.html"},
+        { title: "Финансовый консалтинг", link: "/service/fc.html"}
       ]},
-    { type: 1, title: "Структура организации", link: "#", label: "l2", subnav: [
-        { title: "Отдел оценки недвижимости", link: "#"},
-        { title: "Отдел строительно-технической экспертизы", link: "/structure/cted.html"},
-        { title: "Отдел судебной экспертизы", link: "#"},
-        { title: "Отдел патентования и лицензирования", link: "#"},
-        { title: "Юридический отдел", link: "#"}
-      ]},
-    { type: 0, title: "Тарифы", link: "#"},
     { type: 0, title: "Контакты", link: "/contact.html"}
   ];
 
   var result = '<div class="navbar navbar-inverse navbar-default" role="navigation"> \
-      <div class="container"> \
+      <div class="container-fluid"> \
         <div class="navbar-header"> \
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> \
             <span class="sr-only">Toggle navigation</span> \
@@ -31,7 +19,7 @@ function mkNavbar(active) {
             <span class="icon-bar"></span> \
             <span class="icon-bar"></span> \
           </button> \
-          <a class="navbar-brand" href="/">ГК АРБК</a> \
+          <a class="navbar-brand" href="/arbk">Главная</a> \
         </div> \
         <div class="collapse navbar-collapse"> \
           <ul class="nav navbar-nav">'
@@ -66,19 +54,7 @@ function mkNavbar(active) {
 function mkExpertiseNav(exp) {
   var navigation = [
     { title: "Строительно-техническая экспертиза", link: "cte.html" },
-    { title: "Судебная экспертиза", link: "#"},
-    { title: "Оценочная экспертиза", link: "#"},
-    { title: "Патентоведческая экспертиза", link: "#"},
-    { title: "Автотовароведческая экспертиза", link: "#"},
-    { title: "Землеустроительная экспертиза", link: "#"},
-    { title: "Экспертиза отчетов", link: "#"},
-    { title: "Экспертиза проектной документации и (или) инженерных изысканий", link: "#"},
-    { title: "Составление проекта по реконструкции отдельных частей здания", link: "#"},
-    { title: "Почерковедческая экспертиза", link: "#"},
-    { title: "Экспертиза ущерба и затопления", link: "#"},
-    { title: "Рецензирование экспертных заключений", link: "#"},
-    { title: "Экспертиза проектно-сметной документации", link: "#"},
-    { title: "Экспертиза качества строительных и ремонтных работ", link: "#"}
+    { title: "Судебная экспертиза", link: "ld.html"}
   ];
 
   var result = '<ul class="nav nav-pills nav-stacked">'
