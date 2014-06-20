@@ -7,9 +7,9 @@ function mkNavbar(active) {
         { title: "Патентование", link: "/service/patent.html"},
         { title: "Финансовый консалтинг", link: "/service/fc.html"}
       ]},
-    { type: 0, title: "Рекомендательные письма", link: "#", label: "l2"},
-    { type: 0, title: "Новости", link: "#", label: "l3"},
-    { type: 0, title: "Контакты", link: "/contact.html", label: "l4"}
+    { type: 0, title: "Рекомендательные письма", link: "#", label: "l2" },
+    { type: 0, title: "Новости", link: "#", label: "l3" },
+    { type: 0, title: "Контакты", link: "/contact.html", label: "l4" }
   ];
 
   var result = '<div class="navbar navbar-inverse navbar-default" role="navigation"> \
@@ -79,7 +79,7 @@ function mkMainNav(exp) {
     { title: "Краткие сведения", link: "#" },
     { title: "Компания партнерства", link: "#" },
     { title: "Преимущества", link: "#" },
-    { title: "Партнеры и аккредитации, link: "#" },
+    { title: "Партнеры и аккредитации", link: "#" },
     { title: "Сертификаты", link: "#" },
     { title: "Рейтинги", link: "#" },
     { title: "Реквизиты", link: "#" },
