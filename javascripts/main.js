@@ -7,7 +7,9 @@ function mkNavbar(active) {
         { title: "Патентование", link: "/service/patent.html"},
         { title: "Финансовый консалтинг", link: "/service/fc.html"}
       ]},
-    { type: 0, title: "Контакты", link: "/contact.html"}
+    { type: 0, title: "Рекомендательные письма", link: "#", label="l2"},
+    { type: 0, title: "Новости", link: "#", label="l3"},
+    { type: 0, title: "Контакты", link: "/contact.html", label="l4"}
   ];
 
   var result = '<div class="navbar navbar-inverse navbar-default" role="navigation"> \
@@ -69,5 +71,32 @@ function mkExpertiseNav(exp) {
 
   $(document).ready(function () {
     $('#_expnav').append(result);
+  });
+}
+
+function mkMainNav(exp) {
+  var navigation = [
+    { title: "Краткие сведения", link: "#" },
+    { title: "Компания партнерства", link: "#" },
+    { title: "Преимущества", link: "#" },
+    { title: "Партнеры и аккредитации, link: "#" },
+    { title: "Сертификаты", link: "#" },
+    { title: "Рейтинги", link: "#" },
+    { title: "Реквизиты", link: "#" },
+    { title: "Карьера", link: "#" }
+  ];
+
+  var result = '<ul class="nav nav-pills nav-stacked">'
+  $.each(navigation, function(i, item) {
+    result += '<li';
+    if(item.title == exp) {
+      result += ' class="active"';
+    }
+    result += '><a href="' + item.link + '">' + item.title + '</a></li>';
+  });
+  result += '</ul>';
+
+  $(document).ready(function () {
+    $('#_mainnav').append(result);
   });
 }
